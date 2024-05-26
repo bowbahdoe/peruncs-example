@@ -1,0 +1,16 @@
+pkg:maven/org.jsoup/jsoup@1.17.2
+pkg:maven/org.slf4j/slf4j-jdk14@2.0.13
+
+# I have some issues resolving these at the moment... will fix
+# pkg:maven/software.amazon.awssdk/s3@2.25.60
+# pkg:maven/software.amazon.awssdk/aws-crt-client@2.25.60
+
+pkg:maven/io.helidon.webserver/helidon-webserver-http2@4.0.8
+pkg:maven/io.helidon.webserver/helidon-webserver@4.0.8
+pkg:maven/io.helidon.webserver/helidon-webserver-static-content@4.0.8
+pkg:maven/io.helidon.common/helidon-common-media-type@4.0.8
+pkg:maven/io.helidon.config/helidon-config-yaml@4.0.8
+
+pkg:maven/io.helidon.webclient/helidon-webclient@4.0.8
+pkg:maven/io.helidon.webclient/helidon-webclient-http2@4.0.8
+pkg:maven/io.helidon.http.media/helidon-http-media-jsonp@4.0.8

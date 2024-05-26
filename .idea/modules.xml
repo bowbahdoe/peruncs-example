@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/insbiz.webapp/insbiz.webapp.iml" filepath="$PROJECT_DIR$/insbiz.webapp/insbiz.webapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/peruncs-example.iml" filepath="$PROJECT_DIR$/peruncs-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/peruncs.helidon/peruncs.helidon.iml" filepath="$PROJECT_DIR$/peruncs.helidon/peruncs.helidon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/peruncs.utilities/peruncs.utilities.iml" filepath="$PROJECT_DIR$/peruncs.utilities/peruncs.utilities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/peruncs.webassets/peruncs.webassets.iml" filepath="$PROJECT_DIR$/peruncs.webassets/peruncs.webassets.iml" />
+    </modules>
+  </component>
+</project>
