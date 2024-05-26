@@ -22,3 +22,5 @@ layers:
       files:
         - src: ../build/jar
           dest: /build/jar
+        - src: ../peruncs-submodule/build/jar
+          dest: /build/jar
