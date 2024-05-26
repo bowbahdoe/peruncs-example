@@ -4,9 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/insbiz.webapp/insbiz.webapp.iml" filepath="$PROJECT_DIR$/insbiz.webapp/insbiz.webapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/peruncs-example.iml" filepath="$PROJECT_DIR$/peruncs-example.iml" />
-      <module fileurl="file://$PROJECT_DIR$/peruncs.helidon/peruncs.helidon.iml" filepath="$PROJECT_DIR$/peruncs.helidon/peruncs.helidon.iml" />
-      <module fileurl="file://$PROJECT_DIR$/peruncs.utilities/peruncs.utilities.iml" filepath="$PROJECT_DIR$/peruncs.utilities/peruncs.utilities.iml" />
-      <module fileurl="file://$PROJECT_DIR$/peruncs.webassets/peruncs.webassets.iml" filepath="$PROJECT_DIR$/peruncs.webassets/peruncs.webassets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/peruncs-submodule/peruncs.helidon/peruncs.helidon.iml" filepath="$PROJECT_DIR$/peruncs-submodule/peruncs.helidon/peruncs.helidon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/peruncs-submodule/peruncs.utilities/peruncs.utilities.iml" filepath="$PROJECT_DIR$/peruncs-submodule/peruncs.utilities/peruncs.utilities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/peruncs-submodule/peruncs.webassets/peruncs.webassets.iml" filepath="$PROJECT_DIR$/peruncs-submodule/peruncs.webassets/peruncs.webassets.iml" />
     </modules>
   </component>
 </project>

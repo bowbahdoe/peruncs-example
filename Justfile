@@ -4,37 +4,26 @@ help:
 
 # Downloads external dependencies
 install:
+    just --working-directory peruncs-submodule --justfile peruncs-submodule/Justfile install
     rm -rf libs
-    jresolve --output-directory libs @libs.txt
+    jresolve --output-directory libs @libs.txt @peruncs-submodule/libs.txt
 
 # Cleans up any build artifacts
 clean:
+    just --working-directory peruncs-submodule --justfile peruncs-submodule/Justfile clean
     rm -rf build
 
 # Compiles every module
 build:
+    just --working-directory peruncs-submodule --justfile peruncs-submodule/Justfile build
     rm -rf build/javac
     javac \
       -d build/javac \
-      --module-path libs \
+      --module-path libs:peruncs-submodule/build/jar \
       --module-source-path "./*/src" \
-      --module peruncs.utilities,peruncs.helidon,peruncs.webassets,insbiz.webapp \
+      --module insbiz.webapp \
       --enable-preview \
       --release 22
-
-
-    jar --create \
-        --file build/jar/peruncs.utilities.jar \
-        -C build/javac/peruncs.utilities .
-
-    jar --create \
-        --file build/jar/peruncs.helidon.jar \
-        -C build/javac/peruncs.helidon .
-
-    jar --create \
-        --file build/jar/peruncs.webassets.jar \
-        -C build/javac/peruncs.webassets . \
-        -C peruncs.webassets/res .
 
     jar --create \
         --file build/jar/insbiz.webapp.jar \
