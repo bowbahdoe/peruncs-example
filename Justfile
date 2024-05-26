@@ -42,11 +42,11 @@ docker_run:
 
 javadoc:
     javadoc -d build/javadoc \
-      --module-path libs \
+      --module-path libs:peruncs-submodule/build/jar \
       --module-source-path "./*/src" \
-      --module peruncs.utilities,peruncs.helidon,peruncs.webassets,insbiz.webapp \
+      --module insbiz.webapp \
       --enable-preview \
       --source 22
 
 run module="insbiz.webapp":
-    java --enable-preview --module-path libs:build/jar -m {{module}}
+    java --enable-preview --module-path libs:build/jar:peruncs-submodule/build/jar -m {{module}}
