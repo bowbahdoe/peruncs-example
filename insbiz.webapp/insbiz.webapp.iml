@@ -10,5 +10,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="peruncs.helidon" />
     <orderEntry type="library" name="libs" level="project" />
+    <orderEntry type="module" module-name="peruncs.webassets" />
   </component>
 </module>
