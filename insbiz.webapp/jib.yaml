@@ -1,0 +1,24 @@
+apiVersion: jib/v1alpha1
+kind: BuildFile
+
+from:
+  image: amazoncorretto:22-alpine-full
+
+entrypoint: ["/script.sh"]
+
+layers:
+  entries:
+    - name: scripts
+      files:
+        - properties:
+            filePermissions: 755
+          src: script.sh
+          dest: /script.sh
+    - name: libs
+      files:
+        - src: ../libs
+          dest: /libs
+    - name: jars
+      files:
+        - src: ../build/jar
+          dest: /build/jar

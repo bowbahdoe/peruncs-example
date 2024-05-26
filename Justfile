@@ -42,6 +42,15 @@ build:
         -C build/javac/insbiz.webapp . \
         -C insbiz.webapp/res .
 
+docker_build: build
+    jib build \
+        --build-file=insbiz.webapp/jib.yaml \
+        --target=docker://jib-cli-quickstart \
+        --context=insbiz.webapp
+
+docker_run:
+    docker run --platform=linux/amd64 jib-cli-quickstart
+
 javadoc:
     javadoc -d build/javadoc \
       --module-path libs \
